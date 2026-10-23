@@ -28,7 +28,7 @@ def write(name, header, rows):
     rows = list(rows)
     rng.shuffle(rows)
     with open(OUT / name, "w", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(header)
         for i, r in enumerate(rows, 1):
             w.writerow([f"{PREFIX[name]}{i:03d}", *r])

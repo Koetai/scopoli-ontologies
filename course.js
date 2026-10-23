@@ -198,7 +198,8 @@ const PROBLEMS = [
     lesson: `
       <p>Search, then restrict the results to one ontology with the filter on the left (or <code>&ontology=ordo</code> in the URL). Each result shows a label, a short identifier and the full IRI:</p>
       ${code(`Marfan syndrome   ORDO:558   http://www.orpha.net/ORDO/Orphanet_558`)}
-      <p>The <b>ORPHAcode</b> is the number; clinicians write it as <code>ORPHA:558</code>.</p>`,
+      <p>The <b>ORPHAcode</b> is the number; clinicians write it as <code>ORPHA:558</code>.</p>
+      <p>The filter stays on for your next searches. Clear it before you look for terms from other ontologies.</p>`,
     task: `Search ${OLS("ordo", "Marfan syndrome")} for Marfan syndrome in ORDO. What is its ORPHAcode?`,
     answers: ["ORPHA:558"],
     placeholder: "ORPHA:…",
@@ -213,8 +214,9 @@ const PROBLEMS = [
     concept: "Synonyms and layperson terms",
     prereqs: ["OLSS"],
     story: `<p>A parent's note says "very long, thin spider fingers". HPO records layperson synonyms precisely so that phrases like this can be found.</p>`,
-    lesson: `<p>OLS searches synonyms as well as labels. A match on a synonym still returns the term's preferred label, so check you have found the concept you meant.</p>`,
-    task: `Find the HPO term for "spider fingers". Give its ID.`,
+    lesson: `<p>OLS searches synonyms as well as labels. A match on a synonym still returns the term's preferred label, so check you have found the concept you meant.</p>
+      <div class="callout"><b>Watch the ontology filter.</b> OLS keeps the filter from your last search. If you came here from the ORDO search in OLSS, "spider fingers" returns <i>No results!</i>, because it's a phenotype in HPO, not a disease in ORDO. Clear the filter on the left, or remove <code>&amp;ontology=ordo</code> from the URL.</div>`,
+    task: `Find the HPO term for "spider fingers" (${OLS("hp", "spider fingers")}, filtered to HPO). Give its ID.`,
     answers: ["HP:0001166"],
     placeholder: "HP:…",
     explain: `HP:0001166 Arachnodactyly, with layperson synonyms "Spider fingers" and "Long slender fingers". Annotate with the ID and keep the preferred label next to it; never store only the free text.`,

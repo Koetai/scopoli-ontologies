@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scopoli · Disease ontologies</title>
+<meta name="description" content="Scopoli, a Koetai product: learn to find, navigate, map, annotate and pool with disease ontologies — ORDO, HOOM, OFCO, HPO and Mondo — in OLS, BioPortal and Athena.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E🧭%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#/"><span class="logo">🧭</span> Scopoli <span class="by">ontologies · by <span>Koetai</span></span></a>
+    <nav>
+      <a href="#/problems" data-nav="problems">Problems</a>
+      <a href="#/tree" data-nav="tree">Tree</a>
+      <a href="#/references" data-nav="references">References</a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+    <span class="progress" id="progress"></span>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<footer class="wrap foot">
+  Scopoli is part of <a href="https://koetai.github.io/" target="_blank">Koetai</a> ·
+  <a href="https://github.com/Koetai/scopoli-ontologies" target="_blank">source</a>.<br>
+  Inspired by <a href="https://rosalind.info" target="_blank">Rosalind</a>. ORDO, HOOM and Orphanet data © INSERM/Orphanet (CC BY 4.0).
+  Terms looked up live in <a href="https://www.ebi.ac.uk/ols4/" target="_blank">EBI OLS</a>. All registry patients are synthetic.
+</footer>
+<script src="course.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

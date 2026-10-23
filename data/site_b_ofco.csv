@@ -1,0 +1,15 @@
+patient,ofco_term
+B001,ofco:WalkingLongDistances
+B002,ofco:WalkingLongDistances
+B003,ofco:WalkingLongDistances
+B004,ofco:WalkingLongDistances
+B005,ofco:WalkingLongDistances
+B006,ofco:Driving
+B007,ofco:Walking
+B008,ofco:Driving
+B009,ofco:WalkingLongDistances
+B010,ofco:WalkingShortDistances
+B011,ofco:WalkingShortDistances
+B012,ofco:Driving
+B013,ofco:Driving
+B014,ofco:WalkingLongDistances
